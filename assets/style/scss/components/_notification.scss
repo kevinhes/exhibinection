@@ -1,0 +1,15 @@
+.notification {
+  width: 22px;
+  height: 18px;
+  border-radius: 9px;
+  background: map-get($theme-colors, secondary);
+  color: map-get($theme-colors, light);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: baseline;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%,-50%);
+}
