@@ -25,6 +25,11 @@
   padding-bottom: $navbar-padding-y;
   padding-left: $navbar-padding-x; // default: null
   @include gradient-bg();
+  @include media-breakpoint-up(md) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border: 1px solid map-get($theme-colors, gray);
+  }
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
@@ -54,8 +59,10 @@
 // Used for brand, project, or site names.
 
 .navbar-brand {
-  padding-top: $navbar-brand-padding-y;
-  padding-bottom: $navbar-brand-padding-y;
+  margin-bottom: 0;
+  line-height: 1;
+  padding-top: null;
+  padding-bottom: null;
   margin-right: $navbar-brand-margin-end;
   font-size: 22px;
   // @include font-size($navbar-brand-font-size);
@@ -66,10 +73,9 @@
   &:hover,
   &:focus {
     text-decoration: if($link-hover-decoration == underline, none, null);
+    color: map-get($theme-colors, dark);
   }
   @include media-breakpoint-up(md) {
-    padding-top: 28px;
-    padding-bottom: 28px;
     font-size: 24px;
   }
 }

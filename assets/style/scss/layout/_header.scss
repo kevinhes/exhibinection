@@ -1,0 +1,40 @@
+.scrollNavbar {
+  border-bottom: 1px solid map-get($theme-colors, dark-gray);
+  height: 3.25rem;
+  overflow-y: hidden;
+  .scrollNavbar-list {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .scrollNavbar-item {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+  .scrollNavbar-link {
+    color: $dark-gray;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 1.5;
+    position: relative;
+  }
+  .active::after {
+    content: '';
+    position: absolute;
+    background: map-get($theme-colors, secondary);
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+  }
+  @include media-breakpoint-up(md) {
+    .scrollNavbar-list {
+      justify-content: center;
+    }
+  }
+}

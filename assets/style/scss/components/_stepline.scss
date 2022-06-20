@@ -1,0 +1,48 @@
+.stepLine {
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  flex-wrap: nowrap;
+  padding-top: 8px;
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background: map-get($theme-colors, secondary);
+    height: 2px;
+    top: 0;
+  }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 28px;
+    &::after{
+      left: 7.5px;
+      right: 7.5px;
+    }
+  }
+}
+
+.stepLine-dot {
+  position: relative;
+  font-size: 14px;
+  white-space: nowrap;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+.stepLine-dot::after {
+  content: '';
+  background: map-get($theme-colors, light);
+  border: 1px solid map-get($theme-colors, secondary);
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: -11px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.stepLine-dot.active::after {
+  background: map-get($theme-colors, secondary);
+}

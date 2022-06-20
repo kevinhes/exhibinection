@@ -1,3 +1,13 @@
 @import './vendor/bootstrap';
 
-@import './components/notification'
+@import './base/base';
+@import './base/fontStyle';
+@import './layout/layout';
+@import './layout/header';
+@import './layout/banner';
+
+@import './util/helpers/helper';
+
+@import './components/stepline';
+@import './components/notification';
+@import './components/swiper';
