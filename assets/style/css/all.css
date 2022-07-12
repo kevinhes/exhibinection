@@ -11958,7 +11958,7 @@ body {
 }
 
 .bg-live {
-  background-image: url(/assets/images/people2.png);
+  background-image: url(../../images/people2.png);
   background-size: cover;
   position: absolute;
   height: 100%;
@@ -12074,7 +12074,7 @@ body {
 }
 
 .exhibition-layout .bg-exhibition {
-  background-image: url(/assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg);
+  background-image: url(../../images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg);
   height: 256px;
   background-position: center;
   background-size: cover;
@@ -12240,7 +12240,8 @@ body {
 }
 
 .banner-header {
-  background-image: url(/assets/images/ricardo-gomez-angel.jpg);
+  background-image: url(../../images/ricardo-gomez-angel.jpg);
+  background-image: url(../../images/ricardo-gomez-angel.jpg);
   min-height: 480px;
   padding-bottom: 80px;
   display: -webkit-box;
@@ -12286,7 +12287,7 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   height: 400px;
-  background-image: url(/assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+  background-image: url(../../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
   background-size: cover;
   background-position: center;
   padding-bottom: 36px;
